@@ -4,8 +4,11 @@ import './App.css';
 
 function App() {
   return (
-    <Hello name="react" color="red"/>
+    <>
+      <Hello name="react" color="red" />
+      <Hello color="pink" />
+    </>
   );
-} 
+}
 
 export default App;
