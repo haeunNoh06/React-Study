@@ -3,10 +3,10 @@
 
 - [자료](https://react.vlpt.us/)
 
-## ⏱ 스터디 시작
-- 2023.08.15 ~
+## ⏱ Period
+- 2023.08.15 ~ 
 
-## ⚙️ 개발 환경
+## ⚙️ Development Environment
 - **Language** : JavaScript
 - **Library** : React
-- **Platform** : Firebase
+- **Tool** : VSCode
