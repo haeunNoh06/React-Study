@@ -8,6 +8,7 @@ function User({ user, onRemove, onToggle }) {
                     cursor: 'pointer',
                     color: user.active ? 'green' : 'black'
                 }}
+                onClick={() => onToggle(user.id)}
             >
                 {user.username}
             </b>
@@ -23,7 +24,12 @@ function UserList({ users, onRemove, onToggle }) {
     return (
         <div>
             {users.map(user => (
-                <User user={user} key={user.id} onRemove={onRemove} />// map은 key를 반드시 같이 써야 함
+                <User 
+                user={user} 
+                key={user.id} 
+                onRemove={onRemove}
+                onToggle={onToggle}
+                />// map은 key를 반드시 같이 써야 함
                 // <User user={user} key={user.id}/>// map은 key를 반드시 같이 써야 함
             ))}
         </div>
